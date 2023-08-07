@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap");
+
+/* CSS for larger screens */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #faf6eb;
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  flex: 1;
+  max-width: 50%; /* Two images side by side */
+}
+h1 {
+  font-family: "Belleza", sans-serif;
+  font-size: 2.5rem;
+}
+.hero-btn {
+  font-family: "Marcellus", serif;
+  background-color: rgb(123, 138, 139);
+  color: #faf6eb;
+  padding: 15px 40px;
+  margin-top: 15px;
+  border: transparent;
+  border-radius: 3px;
+}
+.cosmic {
+  color: black;
+  font-size: 3rem;
+}
+.hero-img {
+  width: 100%;
+  height: 95vh;
+  display: block;
+}
+.hero-btn {
+  font-size: 2rem;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+/* CSS for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .hero-img {
+    height: 100vh; /* Change to 100vh to take up the full viewport height */
+    width: 100vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+  .cosmic {
+    font-size: 1.7rem;
+  }
+  .hero-img {
+    height: 70vh;
+  }
+  .cosmic-img {
+    height: 50vh;
+  }
+  .one {
+    display: none; /* Hide the .one image on smaller screens */
+  }
+}

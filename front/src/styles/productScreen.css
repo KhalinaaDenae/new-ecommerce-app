@@ -1,0 +1,64 @@
+/* productScreen.css */
+.product-details-ctnr {
+  background-color: #faf6eb;
+  width: 100vw;
+  padding: 20px;
+}
+
+.product-details-container {
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  flex-wrap: wrap;
+}
+.blue {
+  background-color: rgb(123, 138, 139);
+  border: none;
+  color: #faf6eb;
+}
+.blue:hover {
+  background-color: #faf6eb;
+  color: rgb(123, 138, 139);
+  font-weight: bolder;
+}
+
+.product-image-col,
+.product-description-col,
+.add-to-cart-col {
+  flex: 1; /* Equal distribution of space for each column */
+  margin: 10px; /* Add spacing between columns */
+}
+
+.product-image {
+  max-width: 450px; /* Allow the image to be responsive */
+  max-height: 450px; /* Set the initial height to 450px */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto; /* Center the image */
+}
+.back-btn {
+  background-color: rgb(123, 138, 139);
+  padding: 5px;
+  border-radius: 3px;
+  color: #faf6eb;
+}
+@media screen and (max-width: 868px) {
+  .product-details-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .product-description-col {
+    width: 70%;
+  }
+  .add-to-cart-col {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 508px) {
+  .product-description-col {
+    width: 85%;
+  }
+  .add-to-cart-col {
+    width: 85%;
+  }
+}

@@ -1,0 +1,92 @@
+.productListCtnr {
+  background-color: #faf6eb;
+  font-family: "Marcellus", serif;
+  width: 100vw;
+  padding: 100px;
+}
+/* Container styles */
+.product-list-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  border: 2px solid #4c4c3c;
+  border-radius: 5px;
+}
+.ctnr {
+  width: 100vw;
+  background-color: #4c4c3c;
+}
+.trash {
+  background: transparent;
+  border: transparent;
+}
+
+/* Heading styles */
+.product-list-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Create button styles */
+.create-btn {
+  background-color: #d0c7bf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #4c4c3c8d;
+}
+
+/* Table styles */
+.product-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #4c4c3c8d;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.product-table th {
+  font-weight: bold;
+  background-color: #d0c7bf;
+}
+
+.product-table .action-btns {
+  display: flex;
+  align-items: center;
+}
+
+.product-table .action-btns button {
+  margin-left: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .product-list-heading {
+    font-size: 24px;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+  }
+  .product-list-container {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .productListCtnr {
+    padding: 0;
+  }
+}

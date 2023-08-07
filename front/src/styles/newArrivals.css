@@ -1,0 +1,60 @@
+.new-arrivals {
+  text-align: center;
+  background-color: #faf6eb;
+  color: #361c13;
+}
+
+.new-arrivals-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.new-arrivals h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-arrivals p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-button h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-button button {
+  font-size: 13px;
+  background-color: #673a2a;
+  color: #fff;
+  border: none;
+  padding: 12px 34px;
+  cursor: pointer;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-row img {
+  max-width: 32%;
+  height: auto;
+}

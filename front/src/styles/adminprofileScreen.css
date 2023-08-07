@@ -1,0 +1,8 @@
+.admin-user-ctnr {
+  background-color: #faf6eb;
+  width: 100vw;
+}
+.user-form,
+.order-form {
+  padding: 55px;
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap");
+
+.occasion {
+  text-align: center;
+
+  background-color: #faf6eb;
+  width: 100vw;
+}
+
+.occasion-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.about-message {
+  font-family: "Marcellus", serif;
+  line-height: 35px;
+  font-size: 1.3rem;
+}
+.occasion {
+  font-size: 0.9rem;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.occasion-section {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.occasion-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Belleza", sans-serif;
+  position: relative;
+  top: 200px;
+  color: rgb(62, 60, 60);
+}
+.shop-btn {
+  text-decoration: underline;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+  height: 60vh;
+}
+
+.image-row img {
+  max-width: 20%;
+  padding: 2px;
+}
+
+@media (max-width: 1600px) {
+  .image-row {
+    justify-content: center;
+  }
+  .image-row img {
+    height: 50vh;
+    max-width: 25%;
+  }
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1208px) {
+  .occasion h2 {
+    font-size: 24px;
+  }
+
+  .occasion p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .occasion-section h3 {
+    font-size: 20px;
+  }
+  .image-row {
+    justify-content: space-around;
+  }
+  .image-row img {
+    max-width: 70%;
+  }
+
+  .occasion-section h3 {
+    font-size: 2rem;
+  }
+  .nonee {
+    display: none;
+  }
+}
+@media (max-width: 1390px) {
+  .noneee {
+    display: none;
+  }
+  .image-row {
+    justify-content: center;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  .image-row img {
+    max-width: 100%;
+    padding: 30px;
+    height: 50vh;
+  }
+  .occasion-section h3 {
+    font-size: 1.5rem;
+  }
+  .image-row {
+    flex-direction: column;
+  }
+  .occasion-section {
+    margin: 0;
+    padding: 0;
+  }
+  .none {
+    display: none;
+  }
+}

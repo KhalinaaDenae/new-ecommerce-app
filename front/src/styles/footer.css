@@ -1,0 +1,33 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #c1bdb0;
+  padding: 10px;
+  max-width: 1000px;
+  font-family: "Marcellus", serif;
+  margin: 0 auto; /* Center the footer horizontally */
+}
+
+.footer-ctnr {
+  width: 100%; /* Make the container span the full width of the viewport */
+  background-color: #c1bdb0; /* Apply the background color to the container */
+}
+.footer-column {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 1.4rem;
+  color: #333;
+}
+@media (max-width: 868px) {
+  .footer p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,64 @@
+/* ProductEditScreen.css */
+
+/* Container styles */
+.product-edit-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #c1bdb0;
+  color: black;
+}
+
+.ctnr {
+  background-color: #faf6eb;
+  padding: 60px;
+  font-family: "Marcellus", serif;
+}
+.btn {
+  color: black;
+}
+
+/* Heading styles */
+.product-edit-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Form styles */
+.product-edit-form {
+  margin-top: 20px;
+}
+
+.product-edit-form label {
+  font-weight: bold;
+}
+
+.product-edit-form input,
+.product-edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.product-edit-form input[type="file"] {
+  margin-bottom: 0;
+}
+
+.product-edit-form button[type="submit"] {
+  background-color: #d0c7bf;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-edit-form button[type="submit"]:hover {
+  background-color: #673a2a;
+}

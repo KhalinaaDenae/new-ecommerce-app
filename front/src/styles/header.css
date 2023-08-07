@@ -1,0 +1,43 @@
+/* Existing CSS */
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap");
+
+.navbar-brand {
+  font-family: "Belleza", sans-serif;
+  color: #faf6eb;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.navbar-ctnr {
+  justify-content: space-around;
+  width: 100vw;
+}
+.nav-link {
+  font-family: "Belleza", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgba(
+    var(--bs-secondary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+  padding: 15px 50px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.navbar {
+  max-height: 9vh;
+}
+
+@media (max-width: 1068px) {
+  .navbar {
+    max-height: 12vh;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 868px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}

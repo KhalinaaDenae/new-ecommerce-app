@@ -1,0 +1,56 @@
+/* Container for the entire product page */
+.product-page {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  background-color: #c1bdb0;
+  width: 100vw;
+}
+
+/* Grid container for displaying products */
+.product-grid {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto; /* Center the product grid on the page */
+  width: 1200px;
+  gap: 10px;
+  padding-left: 90px;
+  /* On medium devices, change grid template to 2 products in each row */
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 150px;
+  }
+
+  /* On small devices, change grid template to 1 product in each row */
+  @media (max-width: 730px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+}
+
+/* Individual product item */
+.product-item {
+  /* Center the product within each grid cell */
+  display: flex;
+  justify-content: center;
+
+  /* On large devices, set width for each product to occupy 25% of the row */
+  /* On medium devices, set width for each product to occupy 50% of the row */
+  /* On small devices, set width for each product to occupy 100% of the row */
+  @media (min-width: 577px) {
+    width: 25%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 50%;
+  }
+
+  @media (max-width: 730px) {
+    width: 100%;
+  }
+}

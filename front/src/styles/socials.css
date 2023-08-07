@@ -1,0 +1,41 @@
+/* SocialMediaGrid.css */
+
+/* Center the grid in the middle of the screen */
+.socials-ctnr {
+  font-family: "Marcellus", serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  background-color: #c1bdb0;
+  padding: 5px 0;
+}
+.ig-header {
+  font-size: 1.4rem;
+  padding: 20px 0;
+  color: black;
+}
+
+.social-media-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px;
+  max-width: 1200px;
+}
+
+.grid-item {
+  width: 100%;
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+  padding: 0 1px;
+}
+
+/* Responsive styles for smaller devices */
+@media screen and (max-width: 768px) {
+  .socials-ctnr {
+    display: none;
+  }
+}

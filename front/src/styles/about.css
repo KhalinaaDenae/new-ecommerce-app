@@ -1,0 +1,76 @@
+.about {
+  position: relative;
+  height: 70vh; /* Adjust the height as needed */
+  background-image: url("../image/bg.png"); /* Replace 'your-image.jpg' with the actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #faf7f2;
+  width: 100vw;
+}
+
+.about-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%; /* Adjust the width as needed for the text overlay */
+  height: 100%;
+  background-color: rgba(
+    89,
+    30,
+    6,
+    0.5
+  ); /* Replace with your desired color and opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Belleza", sans-serif;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  width: 75%;
+  line-height: 30px;
+  margin: 0 auto;
+  font-family: "Marcellus", serif;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1800px) {
+  .about-content {
+    width: 70%;
+  }
+  .about-content p {
+    line-height: normal;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    width: 80%;
+  }
+  .about-content p {
+    line-height: normal;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    width: 100%;
+  }
+  .about-content p {
+    line-height: normal;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

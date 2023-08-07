@@ -1,0 +1,22 @@
+.total-ctnr {
+  position: relative;
+  top: 40px;
+  margin: 50px;
+  width: 400px;
+}
+
+.cart-ctnr {
+  background-color: #faf6eb;
+  padding: 50px;
+}
+
+@media (max-width: 1108px) {
+  .total-ctnr {
+    width: 300px;
+  }
+}
+@media (max-width: 900px) {
+  .total-ctnr {
+    width: 250px;
+  }
+}
