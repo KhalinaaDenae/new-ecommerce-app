@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown, Badge } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBag, faUser } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faShoppingBag, faUser } from "@fortawesome/free-solid-svg-icons";
 import { LinkContainer } from "react-router-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -57,7 +57,7 @@ const Header = () => {
 
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  Cart <FontAwesomeIcon icon={faShoppingBag} />
+                  Cart
                   {cartItems.length > 0 && (
                     <Badge pill bg="success" style={{ marginLeft: "5px" }}>
                       {cartItems.reduce((a, c) => a + c.qty, 0)}
@@ -78,9 +78,7 @@ const Header = () => {
                 </>
               ) : (
                 <LinkContainer to="/login">
-                  <Nav.Link>
-                    <FontAwesomeIcon icon={faUser} />
-                  </Nav.Link>
+                  <Nav.Link></Nav.Link>
                 </LinkContainer>
               )}
 
