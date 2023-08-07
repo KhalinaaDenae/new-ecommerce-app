@@ -78,7 +78,7 @@ const Header = () => {
                 </>
               ) : (
                 <LinkContainer to="/login">
-                  <Nav.Link></Nav.Link>
+                  <Nav.Link> Login </Nav.Link>
                 </LinkContainer>
               )}
 
